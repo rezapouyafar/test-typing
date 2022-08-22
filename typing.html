@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculatror</title>
+    <link rel="stylesheet" href="typing.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div id="count_word">
+                <input type="number" min="5" value="5" max="50">
+            </div>
+            <div class="timer">
+                <span id="hours">00</span> :
+                <span id="minutes">00</span> :
+                <span id="seconds">00</span>
+            </div>
+        </div>
+        <div id="wrapper">
+            <div id="text"></div>
+            <textarea name="textarea" id="textarea"></textarea>
+        </div>
+    </div>
+
+    <div id="fixed_wrapper">
+        <div id="show_result">
+            <div>
+                <span>زمان پاسخدهی :</span>
+                <span id="finalTime">00:00:00</span>
+            </div>
+            <div>
+                <span>تعداد کاراکترهای صحیح :</span>
+                <span class="green" id="finalCurrect">25</span>
+            </div>
+            <div>
+                <span>تعداد کاراکترهای اشتباه :</span>
+                <span class="red" id="finalWrong">53</span>
+            </div>
+            <button id="again">دوباره</button>
+        </div>
+    </div>
+
+
+    <script src="typing.js"></script>
+</body>
+
+</html>
